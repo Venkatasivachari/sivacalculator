@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Alfa+Slab+One&family=Anton&family=Bebas+Neue&family=Cascadia+Code:ital,wght@0,200..700;1,200..700&family=Cascadia+Mono:ital,wght@0,200..700;1,200..700&family=Exile&family=Playpen+Sans+Hebrew:wght@100..800&family=Poetsen+One&display=swap');
+
+/* Fullscreen layout for all devices */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #1227e0;
+}
+.h1{
+    color: rgb(4, 44, 241);
+    font-family: "Playpen Sans Hebrew", cursive;
+}
+.ion{
+    border-image: 50px;
+}
+
+/* Title and container */
+.main {
+    text-align: center;
+}
+
+/* Calculator box */
+.con {
+    border: 2px solid rgb(230, 247, 2);
+    text-align: center;
+    padding: 20px;
+    margin: 20px auto;
+    width: 100%;
+    height: 100%;
+    max-width: 400px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 255, 0.2);
+    border-radius: 10px;
+}
+
+/* Input field */
+.input {
+    padding: 10px;
+    margin: 10px 0;
+    width: 100%;
+    font-size: 25px;
+    box-sizing: border-box;
+    font-family: "Playpen Sans Hebrew", cursive;
+}
+
+/* Buttons */
+.val, #equal, #clear {
+    border: 2px solid black;
+    color: aqua;
+    background-color: rgb(3, 28, 250);
+    padding: 15px;
+    margin: 5px;
+    font-family:Georgia, 'Times New Roman', Times, serif          ;
+    border-radius: 15%;
+    font-size: 20px;
+    cursor: pointer;
+    flex: 1;
+    transition:all 1.5s ease;
+    font-family: "Playpen Sans Hebrew", cursive;
+}
+
+/* Hover effect */
+.val:hover, #equal:hover, #clear:hover {
+    transform: scale(1.1);
+    background-color: rgb(231, 211, 211);
+    color: blue;
+}
+
+/* Button rows */
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+/* Double zero button */
+
+
+/* Responsive adjustments */
+@media (max-width: 600px) {
+    .val, #equal, #clear {
+        padding: 12px;
+        font-size: 18px;
+    }
+
+    .input {
+        font-size: 18px;
+    }
+
+    .z {
+        font-size: 24px;
+    }
+}
+
+/* 
+body {
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    background: linear-gradient(-45deg, #e36e08, #6cdb0b, #1e3c72, #000000);
+    background-size: 400% 500%;
+    animation: gradientBG 5s ease infinite;
+}
+
+@keyframes gradientBG {
+    0% {
+        background-position: 0% 50%;
+    }
+    50% {
+        background-position: 100% 50%;
+    }
+    100% {
+        background-position: 0% 50%;
+    }
+} */
+
+
+
+.con {
+  z-index: 1;
+  position: relative;
+  background: rgba(255, 255, 255, 0.9);
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* center horizontally */
+  gap: 10px; /* space between image and text */
+  margin-bottom: 20px;
+}
+
+.logo {
+  width: 40px;     /* adjust as needed */
+  height: 40px;
+  border-radius: 50%; /* make it circular if it's square */
+}
+
+.h1 {
+  font-size: 28px;
+  margin: 0;
+  
+}
