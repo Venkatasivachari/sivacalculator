@@ -58,14 +58,14 @@ body {
     border-radius: 15%;
     font-size: 20px;
     cursor: pointer;
-    flex: 1;
-    transition:all 0.2s ease-in-out;
-    font-family: "Playpen Sans Hebrew", cursive;
+    flex: 5;
+    /* transition:all 0.2s ease-in; */
+    /* font-family: "Playpen Sans Hebrew", cursive; */
 }
 
 /* Hover effect */
 .val:hover, #equal:hover, #clear:hover {
-    transform: scale(1.1);
+    transform: scale(1.);
     background-color: rgb(231, 211, 211);
     color: blue;
 }
@@ -74,7 +74,7 @@ body {
 .row {
     display: flex;
     justify-content: space-between;
-    flex-wrap: wrap;
+    flex-wrap:wrap;
 }
 
 /* Double zero button */
@@ -96,8 +96,8 @@ body {
     }
 }
 
-/* 
-body {
+
+.back {
     margin: 0;
     padding: 0;
     min-height: 100vh;
@@ -107,7 +107,7 @@ body {
     align-items: center;
 
     background: linear-gradient(-45deg, #e36e08, #6cdb0b, #1e3c72, #000000);
-    background-size: 400% 500%;
+    background-size: 200% 500%;
     animation: gradientBG 5s ease infinite;
 }
 
@@ -121,7 +121,7 @@ body {
     100% {
         background-position: 0% 50%;
     }
-} */
+}
 
 
 
